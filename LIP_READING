@@ -1,1 +1,77 @@
+🧠 AI-Based Lip Reading System
+📖 Overview
+
+The AI-Based Lip Reading System is an advanced machine learning project
+that interprets human lip movements and converts them into corresponding text.
+This project aims to assist hearing- and speech-impaired
+individuals and enhance speech recognition in noisy environments using deep learning and computer vision techniques.
+
+The model analyzes video frames focusing on the lip region, extracts visual features, 
+predicts the spoken words using Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN).
+
+
+🚀 Key Features
+
+🎥 Real-time lip movement detection using OpenCV
+
+🧩 Deep learning model trained for lip reading (CNN + LSTM)
+
+🔤 Converts silent video speech into text
+
+📊 Flask-based backend for integration with web UI
+
+💾 Pre-trained model for better accuracy and quick deployment
+
+⚙️ End-to-end pipeline with CI/CD for continuous testing and deployment
+
+🧩 Tech Stack
+Category	Technologies Used
+Frontend	HTML, CSS, JavaScript
+Backend	Python (Flask Framework)
+Machine Learning / Deep Learning	TensorFlow / Keras, OpenCV, NumPy, Pandas
+Model Architecture	CNN + LSTM (Lip movement sequence learning)
+
+
+🎥 Video Input
+      ↓
+👄 Face & Lip Detection (OpenCV)
+      ↓
+📈 Frame Extraction & Preprocessing
+      ↓
+🧠 CNN Feature Extraction
+      ↓
+🔁 LSTM Sequence Learning
+      ↓
+🔤 Predicted Word/Text
+      ↓
+🌐 Flask API → Frontend Display
+
+
+ +-----------------------+
+          |   Developer (Push)    |
+          +----------+------------+
+                     |
+                     v
+          +-----------------------+
+          |    GitHub Repository  |
+          +----------+------------+
+                     |
+          | GitHub Actions / Jenkins |
+                     |
+                     v
+          +-----------------------+
+          |  Continuous Integration|
+          | (Build + Test Model)   |
+          +----------+------------+
+                     |
+                     v
+          +-----------------------+
+          |  Continuous Delivery   |
+          | (Deploy Flask Server)  |
+          +----------+------------+
+                     |
+                     v
+          +-----------------------+
+          |     End User (Web UI)  |
+
 
